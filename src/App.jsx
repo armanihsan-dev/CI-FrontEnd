@@ -43,6 +43,17 @@ const App = () => {
             Choose Premium
           </button>
         </div>
+
+        {/* another section */}
+        <div style={{ border: '1px solid black', padding: '20px' }}>
+          <h3>Enterprise Plan</h3>
+          <p>Contact us for pricing</p>
+          <ul>
+            <li>Custom Feature 1</li>
+            <li>Custom Feature 2</li>
+            <li>Custom Feature 3</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
