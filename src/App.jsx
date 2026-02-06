@@ -3,6 +3,16 @@ import React from 'react';
 const App = () => {
   return (
     <div>
+      {/* header */}
+      <nav>
+        <h1>My React App</h1>
+        <ul style={{ display: 'flex', gap: '20px' }}>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+
       <h1>This is my simple react.js app</h1>
       <div>
         <p>Welcome to my app!</p>
