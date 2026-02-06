@@ -10,6 +10,11 @@ const App = () => {
           Continue
         </button>
       </div>
+
+      <section>
+        <h2>Section Title</h2>
+        <p>This is a section of the app.</p>
+      </section>
     </div>
   );
 };
