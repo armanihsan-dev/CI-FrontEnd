@@ -65,6 +65,9 @@ const App = () => {
           </ul>
         </div>
       </div>
+      <footer style={{ marginTop: '20px' }}>
+        <p>&copy; 2024 My React App. All rights reserved.</p>
+      </footer>
     </div>
   );
 };
