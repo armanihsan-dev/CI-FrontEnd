@@ -7,7 +7,7 @@ const App = () => {
       <header className="navbar">
         <h2 className="logo">Arman.dev</h2>
         <nav>
-          <a href="#">Home</a>
+          <a href="#">Homees</a>
           <a href="#">Projects</a>
           <a href="#">Skills</a>
           <a href="#">Contact</a>
