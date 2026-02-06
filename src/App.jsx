@@ -1,72 +1,68 @@
-import React from 'react';
+import './App.css';
 
 const App = () => {
   return (
-    <div>
-      {/* header */}
-      <nav>
-        <h1>My React App</h1>
-        <ul style={{ display: 'flex', gap: '20px' }}>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
+    <div className="container">
+      {/* NAVBAR */}
+      <header className="navbar">
+        <h2 className="logo">Arman.dev</h2>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Projects</a>
+          <a href="#">Skills</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
 
-      <h1>This is my simple react.js app</h1>
-      <div>
-        <p>Welcome to my app!</p>
-        <button style={{ backgroundColor: 'black', color: 'white' }}>
-          Continue
-        </button>
-      </div>
+      {/* HERO */}
+      <section className="hero">
+        <div className="hero-left">
+          <h1>
+            Building Scalable <span>Full-Stack</span> Applications
+          </h1>
+          <p>
+            MERN Stack Developer crafting production-ready web apps with CI/CD,
+            Docker, and modern architecture.
+          </p>
 
-      <section>
-        <h2>Section Title</h2>
-        <p>This is a section of the app.</p>
+          <div className="buttons">
+            <button className="btn-primary">View Projects</button>
+            <button className="btn-outline">Hire Me</button>
+          </div>
+        </div>
+
+        <div className="hero-right">
+          <div className="card">
+            <h3>🚀 Live DevOps Status</h3>
+            <p>CI/CD Pipeline: Active</p>
+            <p>Server: Running</p>
+            <p>Docker: Healthy</p>
+            <p>Uptime: 99.99%</p>
+          </div>
+        </div>
       </section>
 
-      {/* pricing cards */}
-      <div style={{ display: 'flex', gap: '20px' }}>
-        <div style={{ border: '1px solid black', padding: '20px' }}>
-          <h3>Basic Plan</h3>
-          <p>$9.99/month</p>
-          <ul>
-            <li>Feature 1</li>
-            <li>Feature 2</li>
-            <li>Feature 3</li>
-          </ul>
-          <button style={{ backgroundColor: 'black', color: 'white' }}>
-            Choose Basic
-          </button>
+      {/* FEATURES */}
+      <section className="features">
+        <div className="feature">
+          <h3>⚡ Fast Performance</h3>
+          <p>Optimized full-stack apps with caching & modern architecture.</p>
         </div>
 
-        <div style={{ border: '1px solid black', padding: '20px' }}>
-          <h3>Premium Plan</h3>
-          <p>$19.99/month</p>
-          <ul>
-            <li>Feature A</li>
-            <li>Feature B</li>
-            <li>Feature C</li>
-          </ul>
-          <button style={{ backgroundColor: 'black', color: 'white' }}>
-            Choose Premium
-          </button>
+        <div className="feature">
+          <h3>🔐 Secure Backend</h3>
+          <p>JWT auth, encryption, secure APIs & production practices.</p>
         </div>
 
-        {/* another section */}
-        <div style={{ border: '1px solid black', padding: '20px' }}>
-          <h3>Enterprise Plan</h3>
-          <p>Contact us for pricing</p>
-          <ul>
-            <li>Custom Feature 1</li>
-            <li>Custom Feature 2</li>
-            <li>Custom Feature 3</li>
-          </ul>
+        <div className="feature">
+          <h3>🚀 CI/CD Ready</h3>
+          <p>Auto deployment using GitHub webhooks, Docker & VPS.</p>
         </div>
-      </div>
-      <footer style={{ marginTop: '20px' }}>
-        <p>&copy; 2024 My React App. All rights reserved.</p>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="footer">
+        <p>© 2026 Arman Ihsan — Full Stack Engineer</p>
       </footer>
     </div>
   );
