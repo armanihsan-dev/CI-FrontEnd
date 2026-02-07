@@ -125,6 +125,62 @@ const App = () => {
         </div>
       </section>
 
+      <section className="py-20">
+        <h2 className="text-3xl font-bold text-center mb-12">
+          My <span className="text-cyan-400">Skills</span>
+        </h2>
+
+        <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-6 max-w-6xl mx-auto">
+          {/* Frontend */}
+          <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-cyan-500 transition">
+            <h3 className="text-xl font-semibold mb-4">🎨 Frontend</h3>
+            <ul className="space-y-2 text-gray-400">
+              <li>React.js</li>
+              <li>Next.js</li>
+              <li>JavaScript (ES6+)</li>
+              <li>TypeScript</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+
+          {/* Backend */}
+          <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-cyan-500 transition">
+            <h3 className="text-xl font-semibold mb-4">🖥️ Backend</h3>
+            <ul className="space-y-2 text-gray-400">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>REST APIs</li>
+              <li>Authentication (JWT)</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+
+          {/* DevOps */}
+          <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-cyan-500 transition">
+            <h3 className="text-xl font-semibold mb-4">🚀 DevOps</h3>
+            <ul className="space-y-2 text-gray-400">
+              <li>CI/CD Pipelines</li>
+              <li>Docker</li>
+              <li>GitHub Actions</li>
+              <li>Linux/VPS</li>
+              <li>Nginx</li>
+            </ul>
+          </div>
+
+          {/* Tools */}
+          <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-cyan-500 transition">
+            <h3 className="text-xl font-semibold mb-4">🛠️ Tools</h3>
+            <ul className="space-y-2 text-gray-400">
+              <li>Git & GitHub</li>
+              <li>VS Code</li>
+              <li>Postman</li>
+              <li>Figma</li>
+              <li>Vercel</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* FOOTER */}
       <footer className="border-t border-slate-800 pt-6 text-center text-gray-500">
         <p>© 2026 Arman Ihsan — Full Stack Engineer</p>
