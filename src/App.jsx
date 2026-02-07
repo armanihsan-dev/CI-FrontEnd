@@ -118,18 +118,7 @@ const App = () => {
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4">
-          {[
-            'React',
-            'Next.js',
-            'Node.js',
-            'Express',
-            'MongoDB',
-            'Docker',
-            'CI/CD',
-            'Tailwind',
-            'TypeScript',
-            'Redis',
-          ].map((skill) => (
+          {['React', 'Next.js', 'Node.js', 'Express', 'Redis'].map((skill) => (
             <span
               key={skill}
               className="px-5 py-3 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-400 hover:scale-105 transition"
