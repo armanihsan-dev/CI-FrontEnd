@@ -3,11 +3,18 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-slate-950 text-white px-6 md:px-20 py-8">
-      <Toaster position="top-right" toastOptions={{
-        style: { background: '#0f172a', color: '#fff', border: '1px solid #22d3ee' },
-        success: { iconTheme: { primary: '#22d3ee', secondary: '#0f172a' } },
-      }} />
+    <div className="h-screen bg-pink-200 text-pink-700 px-6 md:px-20 py-8">
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          style: {
+            background: '#0f172a',
+            color: '#fff',
+            border: '1px solid #22d3ee',
+          },
+          success: { iconTheme: { primary: '#22d3ee', secondary: '#0f172a' } },
+        }}
+      />
       {/* NAVBAR */}
       <header className="flex justify-between items-center mb-16">
         <h2 className="text-2xl font-bold text-cyan-400">Arman.dev</h2>
@@ -53,14 +60,14 @@ const App = () => {
           </p>
 
           <div className="flex gap-4">
-            <button 
+            <button
               onClick={() => toast.success('🎨 Projects section coming soon!')}
               className="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg font-semibold text-black transition"
             >
               View Projects
             </button>
 
-            <button 
+            <button
               onClick={() => toast('📧 Contact: arman@dev.com', { icon: '👋' })}
               className="border border-gray-600 hover:border-white px-6 py-3 rounded-lg font-semibold transition"
             >
@@ -87,7 +94,7 @@ const App = () => {
 
       {/* FEATURES */}
       <section className="grid md:grid-cols-3 gap-6 mb-20">
-        <div 
+        <div
           onClick={() => toast.success('⚡ Lightning fast with React + Vite!')}
           className="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-cyan-500 transition cursor-pointer"
         >
@@ -97,7 +104,7 @@ const App = () => {
           </p>
         </div>
 
-        <div 
+        <div
           onClick={() => toast.success('🔐 Security first approach!')}
           className="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-cyan-500 transition cursor-pointer"
         >
@@ -107,7 +114,7 @@ const App = () => {
           </p>
         </div>
 
-        <div 
+        <div
           onClick={() => toast.success('🚀 Automated deployments active!')}
           className="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-cyan-500 transition cursor-pointer"
         >
