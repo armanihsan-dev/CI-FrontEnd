@@ -1,8 +1,13 @@
 import './App.css';
+import toast, { Toaster } from 'react-hot-toast';
 
 const App = () => {
   return (
     <div className="min-h-screen bg-slate-950 text-white px-6 md:px-20 py-8">
+      <Toaster position="top-right" toastOptions={{
+        style: { background: '#0f172a', color: '#fff', border: '1px solid #22d3ee' },
+        success: { iconTheme: { primary: '#22d3ee', secondary: '#0f172a' } },
+      }} />
       {/* NAVBAR */}
       <header className="flex justify-between items-center mb-16">
         <h2 className="text-2xl font-bold text-cyan-400">Arman.dev</h2>
@@ -48,11 +53,17 @@ const App = () => {
           </p>
 
           <div className="flex gap-4">
-            <button className="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg font-semibold text-black transition">
+            <button 
+              onClick={() => toast.success('🎨 Projects section coming soon!')}
+              className="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg font-semibold text-black transition"
+            >
               View Projects
             </button>
 
-            <button className="border border-gray-600 hover:border-white px-6 py-3 rounded-lg font-semibold transition">
+            <button 
+              onClick={() => toast('📧 Contact: arman@dev.com', { icon: '👋' })}
+              className="border border-gray-600 hover:border-white px-6 py-3 rounded-lg font-semibold transition"
+            >
               Hire Me
             </button>
           </div>
@@ -76,21 +87,30 @@ const App = () => {
 
       {/* FEATURES */}
       <section className="grid md:grid-cols-3 gap-6 mb-20">
-        <div className="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-cyan-500 transition">
+        <div 
+          onClick={() => toast.success('⚡ Lightning fast with React + Vite!')}
+          className="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-cyan-500 transition cursor-pointer"
+        >
           <h3 className="text-lg font-semibold mb-2">⚡ Fast Performance</h3>
           <p className="text-gray-400">
             Optimized full-stack apps with caching & modern architecture.
           </p>
         </div>
 
-        <div className="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-cyan-500 transition">
+        <div 
+          onClick={() => toast.success('🔐 Security first approach!')}
+          className="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-cyan-500 transition cursor-pointer"
+        >
           <h3 className="text-lg font-semibold mb-2">🔐 Secure Backend</h3>
           <p className="text-gray-400">
             JWT auth, encryption, secure APIs & production practices.
           </p>
         </div>
 
-        <div className="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-cyan-500 transition">
+        <div 
+          onClick={() => toast.success('🚀 Automated deployments active!')}
+          className="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-cyan-500 transition cursor-pointer"
+        >
           <h3 className="text-lg font-semibold mb-2">🚀 CI/CD Ready</h3>
           <p className="text-gray-400">
             Auto deployment using GitHub webhooks, Docker & VPS.
