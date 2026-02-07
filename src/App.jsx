@@ -109,14 +109,6 @@ const App = () => {
           title="⚡ Blazing Fast"
           desc="Optimized React + Node apps with caching and performance tuning."
         />
-        <Feature
-          title="🔐 Secure Backend"
-          desc="JWT auth, encryption, production-grade architecture."
-        />
-        <Feature
-          title="🚀 Auto Deployment"
-          desc="CI/CD pipelines with Docker, VPS & GitHub automation."
-        />
       </section>
 
       {/* SKILLS */}
