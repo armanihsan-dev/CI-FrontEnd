@@ -10,6 +10,9 @@ const App = () => {
           <a href="#">Homesssss</a>
           <a href="#">Projects</a>
           <a href="#">Skills</a>
+          <a href="#">
+            Blog <span className="badge">New</span>
+          </a>
           <a href="#">Contact</a>
         </nav>
       </header>
